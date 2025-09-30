@@ -55,6 +55,12 @@ All colors MUST be HSL.
     --shadow-glow-primary: 0 0 40px hsl(217 91% 60% / 0.5);
     --shadow-glow-accent: 0 0 40px hsl(189 94% 55% / 0.5);
     --shadow-elevation: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+    
+    /* Northern Lights Colors */
+    --aurora-green: 155 100% 60%;
+    --aurora-blue: 200 100% 70%;
+    --aurora-purple: 280 100% 70%;
+    --aurora-pink: 320 100% 75%;
   }
 
   .dark {

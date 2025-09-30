@@ -100,6 +100,50 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        "aurora": {
+          "0%": { 
+            transform: "translateX(-100%) skewX(-15deg)",
+            opacity: "0"
+          },
+          "25%": {
+            transform: "translateX(-50%) skewX(-10deg)",
+            opacity: "0.6"
+          },
+          "50%": {
+            transform: "translateX(0%) skewX(-5deg)",
+            opacity: "1"
+          },
+          "75%": {
+            transform: "translateX(50%) skewX(-10deg)",
+            opacity: "0.6"
+          },
+          "100%": {
+            transform: "translateX(100%) skewX(-15deg)",
+            opacity: "0"
+          }
+        },
+        "aurora-slow": {
+          "0%": { 
+            transform: "translateX(-120%) skewX(15deg) scaleY(0.8)",
+            opacity: "0"
+          },
+          "30%": {
+            transform: "translateX(-60%) skewX(10deg) scaleY(1)",
+            opacity: "0.4"
+          },
+          "50%": {
+            transform: "translateX(0%) skewX(5deg) scaleY(1.2)",
+            opacity: "0.8"
+          },
+          "70%": {
+            transform: "translateX(60%) skewX(10deg) scaleY(1)",
+            opacity: "0.4"
+          },
+          "100%": {
+            transform: "translateX(120%) skewX(15deg) scaleY(0.8)",
+            opacity: "0"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -110,6 +154,8 @@ export default {
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "slide-in": "slide-in 0.5s ease-out",
         "spin-slow": "spin-slow 20s linear infinite",
+        "aurora": "aurora 8s ease-in-out infinite",
+        "aurora-slow": "aurora-slow 12s ease-in-out infinite",
       },
     },
   },
