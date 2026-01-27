@@ -1,10 +1,10 @@
-import { Mail, Linkedin, Github, Twitter, Send } from "lucide-react";
+import { Mail, Linkedin, Github, Twitter, Send, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FloatingElements from "@/components/FloatingElements";
 
 const ContactPage = () => {
   const socialLinks = [
-    { icon: Mail, label: "Email", href: "mailto:hello@compasionkaboti.com", color: "hover:text-primary" },
+    { icon: Mail, label: "Email", href: "mailto:compassionkaboti@gmail.com", color: "hover:text-primary" },
     { icon: Linkedin, label: "LinkedIn", href: "#", color: "hover:text-accent" },
     { icon: Github, label: "GitHub", href: "#", color: "hover:text-secondary" },
     { icon: Twitter, label: "Twitter", href: "#", color: "hover:text-primary" }
@@ -36,10 +36,17 @@ const ContactPage = () => {
               <div className="space-y-4">
                 <Button 
                   className="w-full justify-start bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105"
-                  onClick={() => window.location.href = 'mailto:hello@compasionkaboti.com'}
+                  onClick={() => window.location.href = 'mailto:compassionkaboti@gmail.com'}
                 >
                   <Mail className="mr-3 w-5 h-5" />
-                  hello@compasionkaboti.com
+                  compassionkaboti@gmail.com
+                </Button>
+                <Button 
+                  className="w-full justify-start bg-accent hover:bg-accent/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105"
+                  onClick={() => window.location.href = 'tel:+263784562929'}
+                >
+                  <Phone className="mr-3 w-5 h-5" />
+                  +263 78 456 2929
                 </Button>
                 
                 <div className="pt-4">
@@ -99,7 +106,7 @@ const ContactPage = () => {
             <Button 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground shadow-[var(--shadow-glow-primary)] hover:scale-105 transition-all duration-300"
-              onClick={() => window.location.href = 'mailto:hello@compasionkaboti.com'}
+              onClick={() => window.location.href = 'mailto:compassionkaboti@gmail.com'}
             >
               <Mail className="mr-2 w-5 h-5" />
               Start a Conversation

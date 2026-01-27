@@ -50,7 +50,7 @@ const Home = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto">
             {[
-              { number: "5+", label: "Years Experience" },
+              { number: "1", label: "Years Experience" },
               { number: "50+", label: "Projects Completed" },
               { number: "30+", label: "Happy Clients" }
             ].map((stat, index) => (
