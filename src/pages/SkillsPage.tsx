@@ -84,7 +84,7 @@ const SkillsPage = () => {
             </h2>
             <div className="space-y-6">
               {[
-                { years: "2020 - Present", role: "Senior UX/UI Designer", company: "Digital Agency" },
+                { years: "2020 - Present", role: "Senior Product Designer", company: "Digital Agency" },
                 { years: "2018 - 2020", role: "Product Designer", company: "Tech Startup" },
                 { years: "2016 - 2018", role: "UI Designer", company: "Creative Studio" }
               ].map((exp, index) => (

@@ -21,6 +21,7 @@ const ProjectsPage = () => {
       title: "TAAS Guidelines",
       fileName: "TAAS GUIDELINES.png",
       image: "/TAAS GUIDELINES.png",
+      link: "https://drive.google.com/file/d/1q_IZO3M9PCjOYfpOuPd4le2Zkv1LO7_h/view?usp=drive_link",
     },
     {
       title: "Flora",
@@ -36,6 +37,16 @@ const ProjectsPage = () => {
       title: "Poster Ad",
       fileName: "poster ad.png",
       image: "/poster ad.png",
+    },
+    {
+      title: "Brochure",
+      fileName: "BROCHURE.png",
+      image: "/BROCHURE.png",
+    },
+    {
+      title: "Poster Concept 01",
+      fileName: "POSTER_1.png",
+      image: "/POSTER_1.png",
     },
   ];
 
@@ -81,6 +92,16 @@ const ProjectsPage = () => {
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     {project.fileName}
                   </p>
+                  {"link" in project && project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-primary hover:opacity-80"
+                    >
+                      View project →
+                    </a>
+                  ) : null}
                 </div>
               </div>
             ))}

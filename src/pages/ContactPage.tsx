@@ -119,7 +119,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center text-muted-foreground">
             <p className="text-sm">
-              © {new Date().getFullYear()} Compasion Kaboti. Crafted with passion & precision.
+              © {new Date().getFullYear()} Compassion Kaboti. Crafted with passion & precision.
             </p>
           </div>
         </div>

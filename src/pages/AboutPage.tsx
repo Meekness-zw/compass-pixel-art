@@ -38,11 +38,11 @@ const AboutPage = () => {
           <div className="space-y-8 mb-20">
             <div className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-8 md:p-12 shadow-[var(--shadow-elevation)] animate-fade-in">
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                I'm a UX/UI and visual designer who cares about quiet, considered interfaces. My work focuses
+                I'm a product and visual designer who cares about quiet, considered interfaces. My work focuses
                 on clear layouts, thoughtful typography, and small details that say a lot without feeling loud.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                A background in <span className="text-accent font-semibold">UX, product design, and digital marketing</span>{" "}
+                A background in <span className="text-accent font-semibold">product design and digital marketing</span>{" "}
                 helps me understand how design lives in the real world – in products, campaigns, and brand systems.
                 That mix of strategy and creativity shapes how I approach every project.
               </p>

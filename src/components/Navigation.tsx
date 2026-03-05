@@ -25,7 +25,7 @@ const Navigation = () => {
             to="/"
             className="text-xs md:text-sm font-semibold tracking-[0.32em] uppercase text-foreground/70 hover:text-foreground transition-colors"
           >
-            Compasion&nbsp;Kaboti
+            Compassion&nbsp;Kaboti
           </Link>
 
           {/* Desktop Navigation */}

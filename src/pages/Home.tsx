@@ -13,14 +13,14 @@ const Home = () => {
           <div className="space-y-8 animate-fade-in text-left">
             <div className="space-y-4">
               <p className="text-sm tracking-[0.32em] uppercase text-muted-foreground">
-                Compasion Kaboti
+                Compassion Kaboti
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-tight font-serif">
-                Sophisticated digital experiences.
+                Product designer for calm interfaces.
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
-                A UX/UI and visual designer crafting clean, minimal interfaces with a focus on typography,
-                composition, and calm, considered experiences for brands and products.
+                A product designer crafting clean, minimal interfaces with a focus on typography, composition,
+                and calm, considered experiences for brands and products.
               </p>
             </div>
 
