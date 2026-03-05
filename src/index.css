@@ -8,59 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Light, neutral base for a clean portfolio look */
+    --background: 0 0% 98%;
+    --foreground: 220 15% 15%;
 
-    --card: 240 10% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
 
-    --popover: 240 10% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
 
-    /* Electric blue */
-    --primary: 217 91% 60%;
+    /* Soft warm highlight */
+    --primary: 32 82% 72%;
     --primary-foreground: 0 0% 100%;
 
-    /* Deep purple */
-    --secondary: 263 70% 50%;
-    --secondary-foreground: 0 0% 100%;
+    /* Soft neutral grey */
+    --secondary: 220 9% 80%;
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 240 5% 15%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 220 9% 92%;
+    --muted-foreground: 220 9% 40%;
 
-    /* Vibrant cyan */
-    --accent: 189 94% 55%;
-    --accent-foreground: 240 10% 3.9%;
+    /* Subtle neutral accent */
+    --accent: 32 82% 90%;
+    --accent-foreground: 220 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 10% 15%;
-    --input: 240 10% 15%;
+    --border: 220 9% 90%;
+    --input: 220 9% 90%;
     --ring: 217 91% 60%;
 
-    --radius: 1rem;
+    --radius: 0rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(263 70% 50%) 100%);
-    --gradient-mesh: radial-gradient(at 40% 20%, hsl(217 91% 60% / 0.3) 0px, transparent 50%),
-                     radial-gradient(at 80% 0%, hsl(263 70% 50% / 0.3) 0px, transparent 50%),
-                     radial-gradient(at 0% 50%, hsl(189 94% 55% / 0.3) 0px, transparent 50%);
+    --gradient-primary: linear-gradient(135deg, hsl(32 82% 80%) 0%, hsl(210 14% 92%) 100%);
+    --gradient-mesh: radial-gradient(at 20% 15%, hsl(32 82% 86% / 0.6) 0px, transparent 55%),
+                     radial-gradient(at 80% 0%, hsl(210 14% 92% / 0.8) 0px, transparent 55%),
+                     radial-gradient(at 0% 70%, hsl(220 9% 88% / 0.7) 0px, transparent 55%);
     
     /* Glassmorphism */
-    --glass-bg: hsl(240 10% 8% / 0.6);
-    --glass-border: hsl(0 0% 100% / 0.1);
+    --glass-bg: hsl(0 0% 100% / 0.75);
+    --glass-border: hsl(220 9% 85% / 0.9);
     
     /* Shadows */
-    --shadow-glow-primary: 0 0 40px hsl(217 91% 60% / 0.5);
-    --shadow-glow-accent: 0 0 40px hsl(189 94% 55% / 0.5);
+    --shadow-glow-primary: 0 0 40px hsl(32 82% 72% / 0.35);
+    --shadow-glow-accent: 0 0 40px hsl(210 14% 80% / 0.3);
     --shadow-elevation: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
     
-    /* Northern Lights Colors */
-    --aurora-green: 155 100% 60%;
-    --aurora-blue: 200 100% 70%;
-    --aurora-purple: 280 100% 70%;
-    --aurora-pink: 320 100% 75%;
+    /* (Aurora colors kept for compatibility, but unused in new design) */
+    --aurora-green: 155 40% 60%;
+    --aurora-blue: 200 40% 65%;
+    --aurora-purple: 280 35% 65%;
+    --aurora-pink: 320 40% 70%;
   }
 
   .dark {

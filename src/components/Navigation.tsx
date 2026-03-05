@@ -9,8 +9,8 @@ const Navigation = () => {
 
   const links = [
     { name: "Home", path: "/" },
+    { name: "Portfolio", path: "/projects" },
     { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
     { name: "Contact", path: "/contact" },
   ];
@@ -18,27 +18,32 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border/70">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            CK
+          <Link
+            to="/"
+            className="text-xs md:text-sm font-semibold tracking-[0.32em] uppercase text-foreground/70 hover:text-foreground transition-colors"
+          >
+            Compasion&nbsp;Kaboti
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {links.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-all duration-300 hover:text-primary relative group ${
-                  isActive(link.path) ? "text-primary" : "text-foreground/70"
+                className={`text-xs tracking-[0.24em] uppercase transition-all duration-300 relative ${
+                  isActive(link.path)
+                    ? "text-foreground"
+                    : "text-foreground/50 hover:text-foreground/80"
                 }`}
               >
                 {link.name}
                 <span
-                  className={`absolute -bottom-1 left-0 w-full h-0.5 bg-primary transition-transform duration-300 ${
-                    isActive(link.path) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                  className={`absolute -bottom-2 left-0 h-[1px] bg-foreground transition-all duration-300 ${
+                    isActive(link.path) ? "w-full opacity-100" : "w-0 opacity-40 group-hover:w-full"
                   }`}
                 />
               </Link>

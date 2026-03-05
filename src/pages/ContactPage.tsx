@@ -22,7 +22,7 @@ const ContactPage = () => {
                 Let's Create Together
               </span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-accent via-primary to-secondary mx-auto rounded-full mb-6" />
+            <div className="w-24 h-1 bg-gradient-to-r from-accent via-primary to-secondary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               I'm always interested in hearing about new projects and opportunities. 
               Whether you have a question or just want to say hi, feel free to reach out!
@@ -31,18 +31,18 @@ const ContactPage = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Contact Card */}
-            <div className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in">
+            <div className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in rounded-none">
               <h2 className="text-2xl font-bold mb-6 text-foreground">Get in Touch</h2>
               <div className="space-y-4">
                 <Button 
-                  className="w-full justify-start bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105"
+                  className="w-full justify-start bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105 rounded-none"
                   onClick={() => window.location.href = 'mailto:compassionkaboti@gmail.com'}
                 >
                   <Mail className="mr-3 w-5 h-5" />
                   compassionkaboti@gmail.com
                 </Button>
                 <Button 
-                  className="w-full justify-start bg-accent hover:bg-accent/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105"
+                  className="w-full justify-start bg-accent hover:bg-accent/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] transition-all duration-300 hover:scale-105 rounded-none"
                   onClick={() => window.location.href = 'tel:+263784562929'}
                 >
                   <Phone className="mr-3 w-5 h-5" />
@@ -59,7 +59,7 @@ const ContactPage = () => {
                         key={link.label}
                         href={link.href}
                         aria-label={link.label}
-                        className={`w-12 h-12 rounded-xl border-2 border-border backdrop-blur-sm flex items-center justify-center text-muted-foreground ${link.color} hover:border-current transition-all duration-300 hover:scale-110 hover:shadow-lg`}
+                        className={`w-12 h-12 border-2 border-border backdrop-blur-sm flex items-center justify-center text-muted-foreground ${link.color} hover:border-current transition-all duration-300 hover:scale-110 hover:shadow-lg rounded-none`}
                       >
                         <link.icon className="w-5 h-5" />
                       </a>
@@ -70,7 +70,7 @@ const ContactPage = () => {
             </div>
 
             {/* Quick Info Card */}
-            <div className="backdrop-blur-xl bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 border border-[var(--glass-border)] rounded-2xl p-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <div className="backdrop-blur-xl bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 border border-[var(--glass-border)] p-8 animate-fade-in rounded-none" style={{ animationDelay: "100ms" }}>
               <h2 className="text-2xl font-bold mb-6 text-foreground">Quick Info</h2>
               <div className="space-y-4">
                 <div>
@@ -96,7 +96,7 @@ const ContactPage = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-12 animate-fade-in" style={{ animationDelay: "200ms" }}>
+          <div className="text-center backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] p-12 animate-fade-in rounded-none" style={{ animationDelay: "200ms" }}>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
               Have a project in mind?
             </h3>

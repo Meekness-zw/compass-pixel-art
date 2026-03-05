@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FloatingElements from "@/components/FloatingElements";
 
@@ -7,66 +7,100 @@ const Home = () => {
   return (
     <div className="min-h-screen relative flex items-center justify-center overflow-hidden">
       <FloatingElements />
-      
-      <div className="container mx-auto px-6 relative z-10 pt-20">
-        <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm mb-6">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">Available for projects</span>
-          </div>
+      <div className="container mx-auto px-6 relative z-10 pt-24 pb-16">
+        <div className="grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-12 items-center max-w-6xl mx-auto">
+          {/* Intro */}
+          <div className="space-y-8 animate-fade-in text-left">
+            <div className="space-y-4">
+              <p className="text-sm tracking-[0.32em] uppercase text-muted-foreground">
+                Compasion Kaboti
+              </p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-tight font-serif">
+                Sophisticated digital experiences.
+              </h1>
+              <p className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
+                A UX/UI and visual designer crafting clean, minimal interfaces with a focus on typography,
+                composition, and calm, considered experiences for brands and products.
+              </p>
+            </div>
 
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight leading-tight">
-            <span className="block text-foreground">Compasion</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-pulse-glow">
-              Kaboti
-            </span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            UX/UI Designer crafting digital experiences that blend beauty with purpose
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link to="/projects">
               <Button 
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-glow-primary)] hover:scale-105 transition-all duration-300"
+                  className="bg-primary hover:bg-primary/90 text-background px-8 shadow-[var(--shadow-glow-primary)] hover:scale-[1.02] transition-all duration-300 rounded-none"
               >
-                View Projects
+                  View portfolio
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             <Link to="/contact">
               <Button 
                 size="lg"
-                variant="outline"
-                className="border-2 border-primary/50 hover:border-primary hover:bg-primary/10 backdrop-blur-sm"
+                  variant="outline"
+                  className="border border-white/40 hover:bg-white/40 rounded-none"
               >
-                Let's Connect
+                  Let's collaborate
               </Button>
             </Link>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto">
-            {[
-              { number: "1", label: "Years Experience" },
-              { number: "50+", label: "Projects Completed" },
-              { number: "30+", label: "Happy Clients" }
-            ].map((stat, index) => (
-              <div 
-                key={stat.label}
-                className="text-center animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.number}
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-10 max-w-md">
+              {[
+                { number: "1", label: "Year designing" },
+                { number: "10+", label: "Projects completed" },
+                { number: "10+", label: "Happy clients" }
+              ].map((stat, index) => (
+                <div
+                  key={stat.label}
+                  className="animate-fade-in"
+                  style={{ animationDelay: `${index * 90}ms` }}
+                >
+                  <div className="text-xs uppercase tracking-[0.24em] text-muted-foreground mb-1">
+                    {stat.label}
+                  </div>
+                  <div className="text-2xl md:text-3xl font-semibold text-foreground">
+                    {stat.number}
+                  </div>
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
+              ))}
+            </div>
+          </div>
+
+          {/* Hero preview grid with aesthetic project images */}
+          <div className="hidden lg:block animate-fade-in" style={{ animationDelay: "120ms" }}>
+            <div className="grid grid-rows-3 gap-4 h-[420px]">
+              <div className="row-span-2 overflow-hidden border border-border rounded-none">
+                <img
+                  src="/poster ad.png"
+                  alt="Poster ad project"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="overflow-hidden border border-border rounded-none">
+                  <img
+                    src="/Linkedin banner.png"
+                    alt="LinkedIn banner project"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="overflow-hidden border border-border rounded-none">
+                  <img
+                    src="/flora.png"
+                    alt="Flora branding project"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    loading="lazy"
+                  />
                 </div>
               </div>
-            ))}
+            </div>
+            <p className="mt-4 text-xs uppercase tracking-[0.22em] text-muted-foreground text-right">
+              Selected work &nbsp;—&nbsp; interface & brand projects
+            </p>
           </div>
         </div>
       </div>

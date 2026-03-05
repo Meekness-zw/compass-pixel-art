@@ -10,7 +10,7 @@ const RoutesWithTransitions = () => {
   const location = useLocation();
   return (
     <div className="pt-0">
-      <div key={location.pathname} className="animate-fade-in">
+      <div key={location.pathname} className="animate-page-in">
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />

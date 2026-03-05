@@ -144,6 +144,10 @@ export default {
             opacity: "0"
           }
         },
+        "page-in": {
+          "0%": { opacity: "0", transform: "translateY(16px) scale(0.98)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -156,6 +160,7 @@ export default {
         "spin-slow": "spin-slow 20s linear infinite",
         "aurora": "aurora 8s ease-in-out infinite",
         "aurora-slow": "aurora-slow 12s ease-in-out infinite",
+        "page-in": "page-in 0.5s ease-out",
       },
     },
   },

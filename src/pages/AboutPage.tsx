@@ -4,60 +4,58 @@ import FloatingElements from "@/components/FloatingElements";
 const AboutPage = () => {
   const interests = [
     {
-      icon: Palette,
-      title: "UX/UI Design",
-      description: "Creating intuitive and beautiful digital experiences that users love"
+      icon: Camera,
+      title: "Visual Storytelling",
+      description: "Using layout, imagery, and motion to tell calm, memorable stories for products and brands."
     },
     {
-      icon: TrendingUp,
-      title: "Digital Marketing",
-      description: "Strategic thinking meets creative execution for brand growth"
+      icon: Palette,
+      title: "Visual Design",
+      description: "Clean, minimal layouts and art direction that support the story in each image."
     },
     {
       icon: Camera,
-      title: "Fashion & Photography",
-      description: "Exploring creativity through different artistic lenses"
+      title: "Fashion & Style",
+      description: "Working with styling, fabric, and texture to create refined, editorial moments."
     }
   ];
 
   return (
     <div className="min-h-screen relative pt-32 pb-20">
       <FloatingElements />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                About Me
-              </span>
+            <p className="text-xs tracking-[0.28em] uppercase text-muted-foreground mb-3">
+              Behind the work
+            </p>
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4 font-serif">
+              A quiet eye for detail.
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           </div>
 
           <div className="space-y-8 mb-20">
             <div className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-8 md:p-12 shadow-[var(--shadow-elevation)] animate-fade-in">
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                I'm a passionate <span className="text-primary font-semibold">UX/UI Designer</span> who 
-                enjoys creating beautiful, functional, and user-centered digital experiences. I love 
-                transforming ideas into designs that not only look good but also solve real problems for people.
+                I'm a UX/UI and visual designer who cares about quiet, considered interfaces. My work focuses
+                on clear layouts, thoughtful typography, and small details that say a lot without feeling loud.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                With a background in <span className="text-accent font-semibold">Product Design</span> and 
-                a crash course in Digital Marketing, I bring a unique blend of creativity, strategy, and 
-                market insight into every project I work on.
+                A background in <span className="text-accent font-semibold">UX, product design, and digital marketing</span>{" "}
+                helps me understand how design lives in the real world – in products, campaigns, and brand systems.
+                That mix of strategy and creativity shapes how I approach every project.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                I'm motivated by curiosity and the joy of making things simple, useful, and enjoyable. 
-                Outside of design, I also enjoy fashion designing and exploring my creativity through 
-                photography—both allow me to see the world from fresh perspectives.
+                Outside of client work, I explore fashion, textiles, and everyday scenes. Those influences show up in my
+                design through texture, rhythm, and the way light and space are used on the screen.
               </p>
             </div>
 
             <div className="backdrop-blur-xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-[var(--glass-border)] rounded-2xl p-8 md:p-12 shadow-[var(--shadow-elevation)] animate-fade-in">
               <blockquote className="text-xl md:text-2xl italic text-foreground leading-relaxed text-center">
-                "My goal is to keep growing as a designer while helping brands and businesses 
-                connect with their audiences in meaningful and impactful ways."
+                "My goal is to create interfaces and visuals that feel calm, intentional, and human – work that clients
+                are proud to share, and people feel comfortable using every day."
               </blockquote>
             </div>
           </div>
@@ -66,10 +64,10 @@ const AboutPage = () => {
             {interests.map((interest, index) => (
               <div
                 key={interest.title}
-                className="group backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in"
+                className="group backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in rounded-none"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 rounded-none">
                   <interest.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">

@@ -24,7 +24,7 @@ const SkillsPage = () => {
     },
     {
       title: "Creative",
-      skills: ["Fashion Design", "Photography", "Visual Design", "Branding", "Typography", "Color Theory"]
+      skills: ["Fashion Design", "Visual Design", "Branding", "Typography", "Color Theory", "Art Direction"]
     }
   ];
 
@@ -40,7 +40,7 @@ const SkillsPage = () => {
                 Skills & Expertise
               </span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A comprehensive toolkit built through years of hands-on experience
             </p>
@@ -50,11 +50,11 @@ const SkillsPage = () => {
             {skillCategories.map((category, index) => (
               <div
                 key={category.title}
-                className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in"
+                className="backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] p-8 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glow-primary)] animate-fade-in rounded-none"
                 style={{ animationDelay: `${index * 75}ms` }}
               >
                 <div className="flex items-center mb-6">
-                  <div className="w-1 h-10 bg-gradient-to-b from-primary to-accent rounded-full mr-4" />
+                  <div className="w-1 h-10 bg-gradient-to-b from-primary to-accent mr-4" />
                   <h3 className="text-2xl font-bold text-foreground">
                     {category.title}
                   </h3>
@@ -64,7 +64,7 @@ const SkillsPage = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <span
                       key={skill}
-                      className="group relative px-4 py-2 bg-muted/30 hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 text-foreground rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 cursor-default animate-fade-in"
+                      className="group relative px-4 py-2 bg-muted/30 hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 text-foreground border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 cursor-default animate-fade-in rounded-none"
                       style={{ 
                         animationDelay: `${index * 75 + skillIndex * 25}ms` 
                       }}
@@ -78,7 +78,7 @@ const SkillsPage = () => {
           </div>
 
           {/* Experience Timeline */}
-          <div className="mt-20 backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-8 md:p-12 animate-fade-in">
+          <div className="mt-20 backdrop-blur-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] p-8 md:p-12 animate-fade-in rounded-none">
             <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
               Experience Highlights
             </h2>
