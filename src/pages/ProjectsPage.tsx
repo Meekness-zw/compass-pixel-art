@@ -3,50 +3,54 @@ import FloatingElements from "@/components/FloatingElements";
 const ProjectsPage = () => {
   const projects = [
     {
-      title: "LinkedIn Banner",
-      fileName: "Linkedin banner.png",
-      image: "/Linkedin banner.png",
+      title: "Basketball Training",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/basketball-training.jpg",
     },
     {
-      title: "New Logo",
-      fileName: "NEW LOGO.png",
-      image: "/NEW LOGO.png",
+      title: "Home Pool Tables",
+      fileName: "Kabo Billiards",
+      image: "/projects/kabo-home-pool-tables.jpg",
     },
     {
-      title: "Logo Combo",
-      fileName: "logo combo.png",
-      image: "/logo combo.png",
+      title: "Quality Sports Gear",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-price-list.jpg",
     },
     {
-      title: "TAAS Guidelines",
-      fileName: "TAAS GUIDELINES.png",
-      image: "/TAAS GUIDELINES.png",
-      link: "https://drive.google.com/file/d/1q_IZO3M9PCjOYfpOuPd4le2Zkv1LO7_h/view?usp=drive_link",
+      title: "New Design Release",
+      fileName: "Kabo Billiards",
+      image: "/projects/kabo-soccer-table-release.jpg",
     },
     {
-      title: "Flora",
-      fileName: "flora.png",
-      image: "/flora.png",
+      title: "Built to Perform",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-basketballs.jpg",
     },
     {
-      title: "Elora",
-      fileName: "elora.png",
-      image: "/elora.png",
+      title: "Every Sport. Every Game.",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-every-sport.jpg",
     },
     {
-      title: "Poster Ad",
-      fileName: "poster ad.png",
-      image: "/poster ad.png",
+      title: "Delivered. On Time.",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-delivered.jpg",
     },
     {
-      title: "Brochure",
-      fileName: "BROCHURE.png",
-      image: "/BROCHURE.png",
+      title: "Gear Up. Play Hard.",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-gear-up.jpg",
     },
     {
-      title: "Poster Concept 01",
-      fileName: "POSTER_1.png",
-      image: "/POSTER_1.png",
+      title: "Every Sport. Every Player.",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-every-player.jpg",
+    },
+    {
+      title: "Your Game. Our Gear.",
+      fileName: "Sports Equipment Galore",
+      image: "/projects/sports-galore-racket-sports.jpg",
     },
   ];
 
@@ -76,13 +80,9 @@ const ProjectsPage = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="aspect-[3/4] w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent px-4 py-3 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-white/75">
-                    <span>{project.title}</span>
-                    <span>{project.fileName}</span>
-                  </div>
                 </div>
 
                 <div className="p-6 flex flex-col gap-4">
@@ -92,16 +92,14 @@ const ProjectsPage = () => {
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     {project.fileName}
                   </p>
-                  {"link" in project && project.link ? (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-primary hover:opacity-80"
-                    >
-                      View project →
-                    </a>
-                  ) : null}
+                  <a
+                    href={project.image}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-primary hover:opacity-80"
+                  >
+                    View full design →
+                  </a>
                 </div>
               </div>
             ))}
