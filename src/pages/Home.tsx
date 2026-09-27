@@ -73,33 +73,33 @@ const Home = () => {
             <div className="grid grid-rows-3 gap-4 h-[420px]">
               <div className="row-span-2 overflow-hidden border border-border rounded-none">
                 <img
-                  src="/poster ad.png"
-                  alt="Poster ad project"
-                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                  src="/projects/sports-galore-basketballs.jpg"
+                  alt="Sports Equipment Galore basketball poster"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="overflow-hidden border border-border rounded-none">
                   <img
-                    src="/Linkedin banner.png"
-                    alt="LinkedIn banner project"
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    src="/projects/kabo-home-pool-tables.jpg"
+                    alt="Kabo Billiards home pool tables poster"
+                    className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-105"
                     loading="lazy"
                   />
                 </div>
                 <div className="overflow-hidden border border-border rounded-none">
                   <img
-                    src="/flora.png"
-                    alt="Flora branding project"
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    src="/projects/basketball-training.jpg"
+                    alt="Basketball training poster"
+                    className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-105"
                     loading="lazy"
                   />
                 </div>
               </div>
             </div>
             <p className="mt-4 text-xs uppercase tracking-[0.22em] text-muted-foreground text-right">
-              Selected work &nbsp;—&nbsp; interface & brand projects
+              Selected work &nbsp;—&nbsp; posters & brand campaigns
             </p>
           </div>
         </div>
